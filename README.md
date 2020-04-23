@@ -1,10 +1,9 @@
 # cloud-platform-terraform-sqs
 
 [![Releases](https://img.shields.io/github/release/ministryofjustice/cloud-platform-terraform-template/all.svg?style=flat-square)](https://github.com/ministryofjustice/cloud-platform-terraform-template/releases)
+_note: Please remove all comments in italics and fill where required>_
 
-_note: Please remove all comments in stanzas and fill where required>_
-
-<Short describion of the module>
+_Short describion of the module_
 This Terraform module ......
 
 ## Usage
@@ -41,8 +40,8 @@ module "example_sqs" {
 ```
 ## Inputs
 
-<Describe what to pass the module>
-<example>:
+_Describe what to pass the module_
+_example_:
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
@@ -74,8 +73,8 @@ Some of the inputs are tags. All infrastructure resources need to be tagged acco
 
 ## Outputs
 
-<Describe the outputs>
-<example>
+_Describe the outputs_
+_example_
 
 | Name | Description |
 |------|-------------|
@@ -88,4 +87,4 @@ Some of the inputs are tags. All infrastructure resources need to be tagged acco
 
 ## Reading Material
 
-- https://docs.aws.amazon.com/sqs/
+_add link to external source_
