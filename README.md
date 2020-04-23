@@ -1,15 +1,16 @@
-# cloud-platform-terraform-sqs
+# cloud-platform-terraform-_template_
 
 [![Releases](https://img.shields.io/github/release/ministryofjustice/cloud-platform-terraform-template/all.svg?style=flat-square)](https://github.com/ministryofjustice/cloud-platform-terraform-template/releases)
+
 _note: Please remove all comments in italics and fill where required>_
 
 _Short describion of the module_
-This Terraform module ......
+_This Terraform module ......_
 
 ## Usage
 
-<Describe how to use the module>
-<example>:
+_Describe how to use the module_
+_example_:
 
 ```hcl
 module "example_sqs" {
