@@ -1,8 +1,9 @@
 # cloud-platform-terraform-_template_
 
-[![Releases](https://img.shields.io/github/release/ministryofjustice/cloud-platform-terraform-template/all.svg?style=flat-square)](https://github.com/ministryofjustice/cloud-platform-terraform-template/releases)
-
 _note: Please remove all comments in italics and fill where required>_
+
+_Please change the urls in the release badge below_
+[![Releases](https://img.shields.io/github/release/ministryofjustice/cloud-platform-terraform-template/all.svg?style=flat-square)](https://github.com/ministryofjustice/cloud-platform-terraform-template/releases)
 
 _Short describion of the module_
 _This Terraform module ......_
