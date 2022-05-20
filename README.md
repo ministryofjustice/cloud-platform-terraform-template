@@ -39,25 +39,8 @@ module "example_sqs" {
   }
 }
 
-```
-## Inputs
-
-_Describe what to pass the module_
-_example_:
-
-| Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| visibility_timeout_seconds | The visibility timeout for the queue | integer | `30` | no |
-| message_retention_seconds | The number of seconds Amazon SQS retains a message| integer | `345600` | no |
-| max_message_size | Max message size in bytes | integer | `262144` | no |
-| delay_seconds | Seconds that message will be delayed for | integer | `0` | no |
-| receive_wait_time_seconds | Seconds for which a ReceiveMessage call will wait for a message to arrive | integer | `0` | no |
-| kms_master_key_id | The ID of an AWS-managed customer master key | string | - | no |
-| kms_data_key_reuse_period_seconds | Seconds for which Amazon SQS can reuse a data key | integer | `0` | no |
-| existing_user_name | if set, adds a policy rather than creating a new IAM user | string | - | no |
-| redrive_policy | if set, specifies the ARN of the "DeadLetter" queue | string | - | no |
-| encrypt_sqs_kms | if set to true, it enables SSE for SQS using KMS key | string | `false` | no |
-
+<!--- BEGIN_TF_DOCS --->
+<!--- END_TF_DOCS --->
 
 ## Tags
 
@@ -72,20 +55,6 @@ Some of the inputs are tags. All infrastructure resources need to be tagged acco
 | is-production |  | string | `false` | yes |
 | team_name |  | string | - | yes |
 | sqs_name |  | string | - | yes |
-
-## Outputs
-
-_Describe the outputs_
-_example_
-
-| Name | Description |
-|------|-------------|
-| access_key_id | Access key id for the credentials. |
-| secret_access_key | Secret for the new credentials. |
-| sqs_id | The URL for the created Amazon SQS queue. |
-| sqs_arn | The ARN of the SQS queue. |
-| user_name | to be used for other queues that have `existing_user_name` set |
-| sqs_name | The name of the SQS queue |
 
 ## Reading Material
 
