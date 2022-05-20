@@ -14,6 +14,37 @@ _Describe how to use the module_
 See the [examples/](examples/) folder.
 
 <!--- BEGIN_TF_DOCS --->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| terraform | >= 0.14 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_caller_identity](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) |
+| [aws_region](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) |
+
+## Inputs
+
+No input.
+
+## Outputs
+
+No output.
+
 <!--- END_TF_DOCS --->
 
 ## Tags
