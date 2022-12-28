@@ -1,17 +1,27 @@
+<!-- Rename the heading when using this template -->
 # cloud-platform-terraform-_template_
 
-_note: Please remove all comments in italics and fill where required>_
+<!-- Remove this note -->
+_Note: See the [source of this file](https://github.com/ministryofjustice/cloud-platform-terraform-template/blob/main/README.md?plain=1) for inline comments to help you complete this file._
 
-_Please change the urls in the release badge below_
+<!-- Change the URL in the release badge to point towards your new repository -->
 [![Releases](https://img.shields.io/github/release/ministryofjustice/cloud-platform-terraform-template/all.svg?style=flat-square)](https://github.com/ministryofjustice/cloud-platform-terraform-template/releases)
 
-_Short describion of the module_
-_This Terraform module ......_
+<!-- Add a short description of the module -->
+This Terraform module will...
 
 ## Usage
 
-_Describe how to use the module_
-See the [examples/](examples/) folder.
+<!-- Describe how to use the module -->
+
+<!-- Change the source URL below to point towards your new repository -->
+```hcl
+module "template" {
+  source = "github.com/ministryofjustice/cloud-platfrom-terraform-template?ref=version"
+}
+```
+
+See the [examples/](examples/) folder for more information.
 
 <!--- BEGIN_TF_DOCS --->
 ## Requirements
@@ -47,9 +57,12 @@ No outputs.
 
 <!--- END_TF_DOCS --->
 
+<!-- Uncomment the below if this module uses tags -->
+
+<!--
 ## Tags
 
-Some of the inputs are tags. All infrastructure resources need to be tagged according to the [MOJ techincal guidance](https://ministryofjustice.github.io/technical-guidance/standards/documenting-infrastructure-owners/#documenting-owners-of-infrastructure). The tags are stored as variables that you will need to fill out as part of your module.
+Some of the inputs for this module are tags. All infrastructure resources must be tagged to meet the MOJ Technical Guidance on [Documenting owners of infrastructure](https://technical-guidance.service.justice.gov.uk/documentation/standards/documenting-infrastructure-owners.html).
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
@@ -59,8 +72,11 @@ Some of the inputs are tags. All infrastructure resources need to be tagged acco
 | infrastructure-support | The team responsible for managing the infrastructure. Should be of the form team-email | string | - | yes |
 | is-production |  | string | `false` | yes |
 | team_name |  | string | - | yes |
-| sqs_name |  | string | - | yes |
+| namespace |  | string | - | yes |
+-->
 
 ## Reading Material
 
-_add link to external source_
+<!-- Add links to external sources, e.g. Kubernetes or AWS documentation -->
+
+- [Cloud Platform user guide](https://user-guide.cloud-platform.service.justice.gov.uk/#cloud-platform-user-guide)
