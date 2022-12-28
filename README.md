@@ -23,7 +23,7 @@ module "template" {
 
 See the [examples/](examples/) folder for more information.
 
-<!--- BEGIN_TF_DOCS --->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -56,8 +56,7 @@ No inputs.
 ## Outputs
 
 No outputs.
-
-<!--- END_TF_DOCS --->
+<!-- END_TF_DOCS -->
 
 <!-- Uncomment the below if this module uses tags -->
 
