@@ -5,5 +5,4 @@ provider "aws" {
 
 module "template" {
   source = "../"
-
 }
