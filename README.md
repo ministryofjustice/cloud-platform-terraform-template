@@ -56,7 +56,6 @@ No inputs.
 ## Outputs
 
 No outputs.
-
 <!-- END_TF_DOCS -->
 
 <!-- Uncomment the below if this module uses tags -->
