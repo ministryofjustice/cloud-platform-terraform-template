@@ -1,23 +1,26 @@
-<!-- Rename the heading when using this template -->
-# cloud-platform-terraform-_template_
+# cloud-platform-terraform-template
 
-<!-- Remove this note -->
-_Note: See the [source of this file](https://github.com/ministryofjustice/cloud-platform-terraform-template/blob/main/README.md?plain=1) for inline comments to help you complete this file._
+[![Releases](https://img.shields.io/github/v/release/ministryofjustice/cloud-platform-terraform-template.svg)](https://github.com/ministryofjustice/cloud-platform-terraform-template/releases)
 
-<!-- Change the URL in the release badge to point towards your new repository -->
-[![Releases](https://img.shields.io/github/release/ministryofjustice/cloud-platform-terraform-template/all.svg?style=flat-square)](https://github.com/ministryofjustice/cloud-platform-terraform-template/releases)
-
-<!-- Add a short description of the module -->
-This Terraform module will...
+This Terraform module will _create a ..._ for use on the Cloud Platform.
 
 ## Usage
 
-<!-- Describe how to use the module -->
-
-<!-- Change the source URL below to point towards your new repository -->
 ```hcl
 module "template" {
-  source = "github.com/ministryofjustice/cloud-platfrom-terraform-template?ref=version"
+  source = "github.com/ministryofjustice/cloud-platform-terraform-template?ref=version" # use the latest release
+
+  # Configuration
+  # ...
+
+  # Tags
+  business_unit          = var.business_unit
+  application            = var.application
+  is_production          = var.is_production
+  team_name              = var.team_name
+  namespace              = var.namespace
+  environment_name       = var.environment
+  infrastructure_support = var.infrastructure_support
 }
 ```
 
@@ -51,33 +54,29 @@ No modules.
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_application"></a> [application](#input\_application) | Application name | `string` | n/a | yes |
+| <a name="input_business_unit"></a> [business\_unit](#input\_business\_unit) | Area of the MOJ responsible for the service | `string` | n/a | yes |
+| <a name="input_environment_name"></a> [environment\_name](#input\_environment\_name) | Environment name | `string` | n/a | yes |
+| <a name="input_infrastructure_support"></a> [infrastructure\_support](#input\_infrastructure\_support) | The team responsible for managing the infrastructure. Should be of the form <team-name> (<team-email>) | `string` | n/a | yes |
+| <a name="input_is_production"></a> [is\_production](#input\_is\_production) | Whether this is used for production or not | `string` | n/a | yes |
+| <a name="input_namespace"></a> [namespace](#input\_namespace) | Namespace name | `string` | n/a | yes |
+| <a name="input_team_name"></a> [team\_name](#input\_team\_name) | Team name | `string` | n/a | yes |
 
 ## Outputs
 
 No outputs.
 <!-- END_TF_DOCS -->
 
-<!-- Uncomment the below if this module uses tags -->
-
-<!--
 ## Tags
 
 Some of the inputs for this module are tags. All infrastructure resources must be tagged to meet the MOJ Technical Guidance on [Documenting owners of infrastructure](https://technical-guidance.service.justice.gov.uk/documentation/standards/documenting-infrastructure-owners.html).
 
-| Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| application |  | string | - | yes |
-| business-unit | Area of the MOJ responsible for the service | string | `mojdigital` | yes |
-| environment-name |  | string | - | yes |
-| infrastructure-support | The team responsible for managing the infrastructure. Should be of the form team-email | string | - | yes |
-| is-production |  | string | `false` | yes |
-| team_name |  | string | - | yes |
-| namespace |  | string | - | yes |
--->
+You should use your namespace variables to populate these. See the [Usage](#usage) section for more information.
 
 ## Reading Material
 
-<!-- Add links to external sources, e.g. Kubernetes or AWS documentation -->
+<!-- Add links to useful documentation -->
 
 - [Cloud Platform user guide](https://user-guide.cloud-platform.service.justice.gov.uk/#cloud-platform-user-guide)
