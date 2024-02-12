@@ -4,6 +4,7 @@ provider "aws" {
 
 module "template" {
   source = "../"
+  # source = "github.com/ministryofjustice/cloud-platform-terraform-template?ref=version" # use the latest release
 
   # Tags
   business_unit          = var.business_unit
